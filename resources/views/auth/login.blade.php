@@ -39,6 +39,14 @@
                             </div>
                         </div>
 
+                        <div class="row mb-3 form-group">
+                            <div class="col-md-6 offset-md-4">
+                                <a href="{{ route('login.google') }}" class="btn btn-primary w-100 mb-2 btn-danger">Login With Google</a>
+                                <a href="{{ route('login.facebook') }}" class="btn btn-primary w-100 mb-2 btn-primary">Login With Facebook</a>
+                                <a href="{{ route('login.github') }}" class="btn btn-primary w-100 mb-2 btn-dark">Login With Github</a>
+                            </div>
+                        </div>
+
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
