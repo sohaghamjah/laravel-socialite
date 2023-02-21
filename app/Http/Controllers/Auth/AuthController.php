@@ -32,6 +32,10 @@ class AuthController extends Controller
     // Facebook callback
     public function handleFacebookCallback(){
         $user = Socialite::driver('facebook')->user();
+
+        $this->_userRegisterOrLogin($user);
+
+        return redirect()->route('home');
     }
 
      // Github login
@@ -42,6 +46,10 @@ class AuthController extends Controller
     // Github callback
     public function handleGithubCallback(){
         $user = Socialite::driver('github')->user();
+
+        $this->_userRegisterOrLogin($user);
+
+        return redirect()->route('home');
     }
 
 
